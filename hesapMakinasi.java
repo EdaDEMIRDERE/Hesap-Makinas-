@@ -23,8 +23,13 @@ public class Main {
                 System.out.println("Bolunecek sayıları giriniz : ");
                 double number3 = myObj.nextInt();
                 double number4 = myObj.nextInt();
-                double y= bolmeIslemi(number3, number4);
-                System.out.println(y);
+                if(number4==0){
+                    System.out.println("Sifira bolme hatasi");
+                }
+                else{
+                    double y= bolmeIslemi(number3, number4);
+                    System.out.println(y);
+                }
                 break;
         }
 
